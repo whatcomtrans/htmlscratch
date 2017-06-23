@@ -102,8 +102,11 @@ function toggle () {
     b.className = "buttonGreen";
   }
 }
-
-document.getElementById("b").innerText = getAllUrlParams().text;
+var t = "Join";
+if (getAllUrlParams().text != "") {
+    t = getAllUrlParams().text;
+}
+document.getElementById("b").innerText = t;
 </script>
 </head>
 <body>
