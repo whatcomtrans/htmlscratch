@@ -30,17 +30,16 @@
 </style>
 <script>
 var status = "Join";
-var colorClass = "bottonGreen";
 function toggle () {
   if (status == "Join") {
     status = "Leave";
-    colorClass = "bottonRed";
   } else {
     status = "Join";
-    colorClass = "bottonGreen";
   }
   // Change the button text to 'status'
-  // Change the class to 'colorClass'
+  document.getElementById("b").classList.toggle("buttonGreen");
+  document.getElementById("b").classList.toggle("buttonRed");
+  document.getElementById("b").innerHtml = status;
 }
 </script>
 </head>
