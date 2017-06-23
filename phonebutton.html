@@ -1,11 +1,11 @@
 <html>
 <head>
 <style>
-.buttonGreen {
-    background-color: #4CAF50; /* Green */
+.button {
+    background-color: #555555; /* Black */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 0px 0px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -14,18 +14,8 @@
     cursor: pointer;
 }
 
-.buttonRed {
-    background-color: #f44336; /* Red */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
+.buttonGreen {background-color: #4CAF50;} /* Green */
+.buttonRed {background-color: #f44336;} /* Red */ 
 
 </style>
 <script>
@@ -43,6 +33,6 @@ function toggle () {
 </script>
 </head>
 <body>
-<button id="b" class="buttonGreen" onclick="toggle();">Join</button>
+<button id="b" class="button" onclick="toggle();">Join</button>
 </body>
 </html>
