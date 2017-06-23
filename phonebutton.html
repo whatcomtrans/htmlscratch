@@ -104,8 +104,9 @@ function toggle () {
 }
 var t = "Join";
 window.onload = function() {
-    if (getAllUrlParams().text != "") {
-        t = getAllUrlParams().text;
+    var tt = getAllUrlParams().text;
+    if (tt != null) {
+        t = tt;
     }
     document.getElementById("b").innerText = t;
 };
