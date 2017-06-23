@@ -31,15 +31,14 @@
 <script>
 var status = "Join";
 function toggle () {
-  if (status == "Join") {
-    status = "Leave";
+  var b = document.getElementById("b");
+  if (b.innerText == "Join") {
+    b.innerText = "Leave";
   } else {
-    status = "Join";
+    b.innerText = "Join";
   }
-  // Change the button text to 'status'
-  document.getElementById("b").classList.toggle("buttonGreen");
-  document.getElementById("b").classList.toggle("buttonRed");
-  document.getElementById("b").innerText = status;
+  b.classList.toggle("buttonGreen");
+  b.classList.toggle("buttonRed");
 }
 </script>
 </head>
