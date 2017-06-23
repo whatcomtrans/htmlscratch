@@ -1,7 +1,7 @@
 <html>
 <head>
 <style>
-.button {
+.buttonGreen {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -14,21 +14,30 @@
     cursor: pointer;
 }
 
-.buttonGreen {background-color: #4CAF50;} /* Green */
-.buttonRed {background-color: #f44336;} /* Red */ 
+.buttonRed {
+    background-color: #f44336;  /* Red */ 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 
 </style>
 <script>
-var status = "Join";
 function toggle () {
   var b = document.getElementById("b");
   if (b.innerText == "Join") {
     b.innerText = "Leave";
+    b.className = "buttonRed";
   } else {
     b.innerText = "Join";
+    b.className = "buttonGreen";
   }
-  b.classList.toggle("buttonGreen");
-  b.classList.toggle("buttonRed");
 }
 </script>
 </head>
