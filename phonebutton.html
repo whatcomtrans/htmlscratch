@@ -103,15 +103,15 @@ function toggle () {
   }
 }
 var t = "Join";
-if (getAllUrlParams().text != "") {
-    t = getAllUrlParams().text;
-}
+window.onload = function() {
+    if (getAllUrlParams().text != "") {
+        t = getAllUrlParams().text;
+    }
+    document.getElementById("b").innerText = t;
+};
 </script>
 </head>
 <body>
 <button id="b" class="buttonGreen" onclick="toggle();">Join</button>
-<script>
-    document.getElementById("b").innerText = t;
-</script>
 </body>
 </html>
